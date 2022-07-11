@@ -31,3 +31,9 @@ done
 curl https://bun.sh/install | bash
 #Install Powerline Fonts(requirement for Spaceship
 sudo apt-get install fonts-powerline
+# Set ZSH_CUSTOM
+ZSH_CUSTOM="$HOME./oh-my-zsh/custom"
+# Install Spaceship
+git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+# Symlink theme to ZSH_CUSTOM
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
