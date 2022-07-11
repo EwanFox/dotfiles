@@ -2,6 +2,7 @@
 ############################
 # This script creates symlinks from the home directory to any desired dotfiles in ${homedir}/dotfiles
 # and installs bun
+# oh and also spaceship(Oh my ZSH theme)
 ############################
 
 
@@ -28,3 +29,5 @@ done
 
 # Install Bun
 curl https://bun.sh/install | bash
+#Install Powerline Fonts(requirement for Spaceship
+sudo apt-get install fonts-powerline
