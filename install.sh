@@ -1,14 +1,11 @@
 #!/usr/bin/env bash
 ############################
 # This script creates symlinks from the home directory to any desired dotfiles in ${homedir}/dotfiles
+# and installs bun
 ############################
 
-if [ "$#" -ne 1 ]; then
-    echo "Usage: install.sh <home_directory>"
-    exit 1
-fi
 
-homedir=$1
+homedir=$HOME
 
 # dotfiles directory
 dotfiledir=${homedir}/dotfiles
@@ -26,3 +23,6 @@ for file in ${files}; do
     echo "Creating symlink to $file in home directory."
     ln -sf ${dotfiledir}/.${file} ${homedir}/.${file}
 done
+
+# Install Bun
+curl https://bun.sh/install | bash
