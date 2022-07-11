@@ -8,8 +8,10 @@
 homedir=$HOME
 
 # dotfiles directory
-dotfiledir=${homedir}/dotfiles
-
+# Absolute path to this script, e.g. /home/user/bin/foo.sh
+SCRIPTR=$(readlink -f "$0")
+# Absolute path this script is in, thus /home/user/bin
+dotfiledir=$(dirname "$SCRIPTR")
 # list of files/folders to symlink in ${homedir}
 files="bash_profile bashrc bash_prompt aliases private"
 
