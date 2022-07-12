@@ -38,7 +38,7 @@ fc-cache -f -v
 # Check font is installed
 fc-list | grep "Hack"
 # Set ZSH_CUSTOM
-ZSH_CUSTOM="$HOME/oh-my-zsh/custom"
+ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
 # Install Spaceship
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 # Symlink theme to ZSH_CUSTOM
