@@ -31,6 +31,8 @@ done
 curl https://bun.sh/install | bash
 # Nerd Fonts Hack
 curl https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete%20Mono.ttf -o font.ttf
+# Add fonts dir
+mkdir $HOME/.local/share/fonts
 # Install font
 ln -sf font.ttf $HOME/.local/share/fonts/
 # Clear font cache
