@@ -29,10 +29,16 @@ done
 
 # Install Bun
 curl https://bun.sh/install | bash
-#Install Powerline Fonts(requirement for Spaceship
-sudo apt-get install fonts-powerline
+# Nerd Fonts Hack
+curl https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete%20Mono.ttf -o font.ttf
+# Install font
+ln -sf font.ttf $HOME/.local/share/fonts/
+# Clear font cache
+fc-cache -f -v
+# Check font is installed
+fc-list | grep "Hack"
 # Set ZSH_CUSTOM
-ZSH_CUSTOM="$HOME./oh-my-zsh/custom"
+ZSH_CUSTOM="$HOME/oh-my-zsh/custom"
 # Install Spaceship
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 # Symlink theme to ZSH_CUSTOM
