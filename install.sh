@@ -29,8 +29,8 @@ done
 
 # Install Bun
 curl https://bun.sh/install | bash
-# Nerd Fonts Hack
-curl https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete%20Mono.ttf -o font.ttf
+# Install Powerline
+sudo apt-get install powerline fonts-powerline -y
 # Add fonts dir
 mkdir $HOME/.local/share/fonts
 # Install font
