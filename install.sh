@@ -26,7 +26,10 @@ for file in ${files}; do
     echo "Creating symlink to $file in home directory."
     ln -sf ${dotfiledir}/.${file} ${homedir}/.${file}
 done
-
+# Install zsh
+sudo apt install zsh
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # Install Bun
 curl https://bun.sh/install | bash
 # Install Powerline
