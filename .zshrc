@@ -10,5 +10,3 @@ export SPACESHIP_DIR_TRUNC=0
 export ZSH="${HOME}/.oh-my-zsh"
 #Oh My ZSH plugins
 plugin=(git)
-# Install Oh My ZSH
-source $ZSH/oh-my-zsh.sh
